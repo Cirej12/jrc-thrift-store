@@ -1,1 +1,109 @@
-style.css
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #faf7f2;
+  color: #333;
+}
+
+header {
+  background: #2d2d2d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #facc15;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #fde047;
+}
+
+nav {
+  display: flex;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* ---------- HERO BANNER ---------- */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=1650&q=80')
+    no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* ---------- BUTTON ---------- */
+.button {
+  padding: 12px 20px;
+  background: #facc15;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover {
+  background: #fde047;
+}
+
+/* ---------- SHOP PAGE ---------- */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #b45309;
+}
+
+/* ---------- ABOUT & CONTACT ---------- */
+.page {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #2d2d2d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
